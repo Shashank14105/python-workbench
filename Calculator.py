@@ -13,7 +13,7 @@ def click(event):
     else:
         screen_value.set(screen_value.get() + text)
 
-# Create the main window
+# Main window
 cal = Tk()
 cal.geometry("400x560")
 cal.title("Super Calculator")
@@ -41,5 +41,7 @@ for (text, row, col) in button_texts:
     button.grid(row=row, column=col, padx=5, pady=5)
     button.bind('<Button-1>', click)
 
-# Start the Tkinter event loop
+# Tkinter event loop
 cal.mainloop()
+
+# Super Calculator by Shashank
